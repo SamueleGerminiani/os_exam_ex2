@@ -9,7 +9,7 @@ all: $(TARGET) $(CHILD_EXEC)
 
 # Rule to compile the main program (ex2)
 $(TARGET): src/ex2.c src/errExit.c
-	$(CC) -I $(INCLUDES) $(CFLAGS) -o $(TARGET) src/ex2.c
+	$(CC) -I $(INCLUDES) $(CFLAGS) -o $(TARGET) src/ex2.c src/errExit.c
 
 # Clean up the generated files
 clean:
